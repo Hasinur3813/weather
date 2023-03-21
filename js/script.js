@@ -45,6 +45,13 @@ window.onload = function defaultLocation(){
 
 search.addEventListener('click', function(){mainFunction(inputBox.value)});
 
+inputBox.addEventListener('keyup',function(item){
+    if(item.key == "Enter"){
+        search.click();
+    }
+});
+
+
 // Main function 
 
 function mainFunction(name){
