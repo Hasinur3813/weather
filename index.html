@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Weather APP</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="app_box">
+            <div class="header">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <input id="search" type="text" placeholder="City name">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </div>
+
+            <div class="bottom">
+                <div class="weather">
+                    <img id="weatherImage" src="img/rain.png">
+                    <p id="location" style="text-transform: uppercase; font-weight:600;letter-spacing: 0.07em;margin-top:35px;">Dhaka</p>
+                    <P><span id="temp">0</span><sup> o</sup>C</P>
+                    <p id="weDes">Moderate rain</p>
+                </div>
+                <div class="footer">
+                    <div class="humadity">
+                        <img src="img/humadity.png">
+                        <div class="text">
+                            <span id="humadity">0%</span>
+                            <P>humidity</P>
+                        </div>
+                    </div>
+                    <div class="wind-speed">
+                        <i class="fa-solid fa-wind"></i>
+    
+                        <div class="text2">
+                            <span id="speed">0Km/h</span>
+                            <P>Wind speed</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="error-box" style="display:none ;">
+                <img src="img/error.png" alt="error" class="error-image">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><br>Oops! try different city name or a district name.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+ <script src="./js/script.js"></script>
+</body>
+</html>
